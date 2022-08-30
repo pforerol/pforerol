@@ -2,7 +2,38 @@
 @model ProyectoCiclo3.App.Frontend.Pages.ListRutasModel
 @{
 }
-<td>@Rutas.id</td>
-<td>@Rutas.origen.nombre</td>
-<td>@Rutas.destino.nombre</td>
-<td>@Rutas.tiempo_estimado.nombre</td>
+<table class="table table-hover">
+    <thead>
+     <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Origen</th>
+        <th scope="col">Destino</th>
+        <th scope="col">Tiempo estimado</th>
+     </tr>
+    </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>10-Norte/Sur</td>
+      <td>Norte</td>
+      <td>Sur</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>20-Oriente/Occidente</td>
+      <td>Oriente</td>
+      <td>Occidente</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>30-NorOcc /NorOri</td>
+      <td>Nor-Occidente</td>
+      <td>Nor-Oriente</td>
+      <td>6</td>
+     </tr>
+  </tbody>
+</table>       
+
